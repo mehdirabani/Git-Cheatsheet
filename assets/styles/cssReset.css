@@ -1,0 +1,123 @@
+/* مدرن CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* حذف استایل‌های پیش‌فرض لیست‌ها */
+ul,
+ol {
+  list-style: none;
+}
+
+/* حذف استایل‌های پیش‌فرض لینک‌ها */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* تنظیمات پایه برای بدنه */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* تنظیمات برای مدیا المنت‌ها */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* حذف استایل‌های پیش‌فرض فرم المنت‌ها */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* استایل بهتر برای دکمه‌ها */
+button {
+  cursor: pointer;
+}
+
+/* تنظیمات جدول‌ها */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* تنظیمات پیش‌فرض برای متن */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* حذف استایل پیش‌فرض کراس‌ها در مرورگرها */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* تنظیمات برای اسکرول نرم */
+html {
+  scroll-behavior: smooth;
+}
+
+/* تنظیمات برای فونتها */
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    sans-serif;
+}
+
+/* حذف اسپینر در اینپوت‌های عددی */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* رفع مشکلات در مرورگرهای قدیمی */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* تنظیمات برای IE */
+html {
+  -ms-overflow-style: scrollbar;
+}
