@@ -5,6 +5,7 @@
   font-family: "yekan bakh", "tahoma";
 }
 body {
+  direction: rtl;
   max-width: 1600px;
   margin: 0 auto;
 }
