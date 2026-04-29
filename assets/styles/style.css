@@ -12,7 +12,7 @@ body {
 }
 table {
   text-align: center;
-  min-width: 850px;
+  min-width: 1000px;
   max-width: 1500px;
   margin: 0 auto;
   border-collapse: collapse;
