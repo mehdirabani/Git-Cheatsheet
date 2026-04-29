@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "yekan bakh", "tahoma";
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+table {
+  text-align: center;
+  min-width: 850px;
+  max-width: 1500px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+table thead {
+  background: gray;
+  color: #fff;
+}
+table tbody tr {
+  background: rgb(221, 221, 221);
+}
