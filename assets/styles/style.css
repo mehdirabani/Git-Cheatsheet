@@ -12,21 +12,24 @@ table {
   overflow: hidden;
   border-radius: 5px;
 }
-table thead {
-  color: #fff;
-}
 table thead th:nth-child(odd) {
-  background: gray;
-}
-table thead th:nth-child(even) {
-  background: rgb(88, 88, 88);
-}
-table tbody tr:nth-child(odd) {
   background: rgb(221, 221, 221);
 }
-table tbody tr:nth-child(even) {
+table thead th:nth-child(even) {
   background: rgb(185, 183, 183);
 }
-table tbody tr:nth-child(odd) td:nth-child(odd) {
+table tbody tr:nth-child(odd) {
   direction: ltr;
+}
+table tbody tr:nth-child(odd) td:nth-child(odd) {
+  background: rgb(185, 183, 183);
+}
+table tbody tr:nth-child(odd) td:nth-child(even) {
+  background: rgb(221, 221, 221);
+}
+table tbody tr:nth-child(even) td:nth-child(odd) {
+  background: rgb(221, 221, 221);
+}
+table tbody tr:nth-child(even) td:nth-child(even) {
+  background: rgb(185, 183, 183);
 }
