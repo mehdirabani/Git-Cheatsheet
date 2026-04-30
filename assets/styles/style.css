@@ -7,18 +7,26 @@ body {
 }
 table {
   text-align: center;
-  min-width: 1000px;
-  max-width: 1500px;
+  width: 1500px;
   margin: 0 auto;
-  border-collapse: collapse;
   overflow: hidden;
   border-radius: 5px;
-  padding: 10px 10px;
 }
 table thead {
-  background: gray;
   color: #fff;
 }
-table tbody tr {
+table thead th:nth-child(odd) {
+  background: gray;
+}
+table thead th:nth-child(even) {
+  background: rgb(88, 88, 88);
+}
+table tbody tr:nth-child(odd) {
   background: rgb(221, 221, 221);
+}
+table tbody tr:nth-child(even) {
+  background: rgb(185, 183, 183);
+}
+table tbody tr:nth-child(odd) td:nth-child(odd) {
+  direction: ltr;
 }
