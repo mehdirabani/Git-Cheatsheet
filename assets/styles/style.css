@@ -21,6 +21,10 @@ table thead th:nth-child(even) {
 table tbody td:nth-child(odd) {
   direction: ltr;
 }
+table tbody td:nth-child(even) {
+  padding: 3px 10px;
+text-align: right;
+}
 table tbody tr:nth-child(odd) td:nth-child(odd) {
   background: rgb(185, 183, 183);
 }
