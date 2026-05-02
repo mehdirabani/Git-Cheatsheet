@@ -1,5 +1,5 @@
 /* style.css - استایل‌های اختصاصی جدول Git */
-@import url('./cssReset.css');
+@import url("./cssReset.css");
 
 /* ==================== متغیرهای CSS ==================== */
 :root {
@@ -18,10 +18,14 @@
 
 /* ==================== تنظیمات بدنه ==================== */
 body {
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
   min-height: 100vh;
   padding: 2rem 1rem;
-  font-family: system-ui, 'Segoe UI', 'Yekan Bakh', 'Roboto', sans-serif;
+  font-family: system-ui, "Segoe UI", "Yekan Bakh", "Roboto", sans-serif;
   color: #1e293b;
 }
 
@@ -54,18 +58,23 @@ h1 span {
   background: none;
   -webkit-text-fill-color: initial;
   color: #ffd966;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 /* خط تزئینی زیر تیتر */
 h1::after {
-  content: '';
+  content: "";
   display: block;
   width: 100px;
   height: 4px;
   background: linear-gradient(90deg, transparent, #fff, transparent);
   border-radius: 2px;
   margin: 0.5rem auto 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
 }
 
 /* ==================== کانتینر جدول ==================== */
@@ -102,7 +111,7 @@ h1::after {
   font-weight: 600;
   font-size: 1.05rem;
   text-align: center;
-  border-bottom: 2px solid rgba(255,255,255,0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* ترازبندی ستون اول (دستورات) به چپ برای نمایش بهتر کدها */
@@ -136,12 +145,12 @@ h1::after {
   background-color: #eef2ff !important;
   cursor: default;
   transform: scale(1.01);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* استایل ستون اول (دستورات) */
 .git-table td:first-child {
-  font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: "SF Mono", "JetBrains Mono", "Fira Code", monospace;
   direction: ltr;
   text-align: left;
   font-weight: 500;
@@ -168,7 +177,9 @@ h1::after {
   white-space: normal;
   word-break: break-word;
   direction: ltr;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* ==================== ریسپانسیو برای موبایل ==================== */
@@ -176,28 +187,28 @@ h1::after {
   body {
     padding: 1rem 0.75rem;
   }
-  
+
   .table-container {
     padding: 0.5rem;
     border-radius: 20px;
   }
-  
+
   .git-table th,
   .git-table td {
     padding: 0.7rem 0.6rem;
   }
-  
+
   .git-table td:first-child {
     width: 45%;
   }
-  
+
   .git-table code {
     font-size: 0.75rem;
     padding: 0.15rem 0.4rem;
     white-space: normal;
     word-break: break-word;
   }
-  
+
   .git-table td:last-child {
     font-size: 0.85rem;
   }
