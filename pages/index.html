@@ -239,19 +239,23 @@
           <td>
             <code>git restore</code>
           </td>
-          <td>برای حذف تغغیرات workSpace از قسمت commite استفاده میشود </td> 
+          <td>برای حذف تغغیرات workSpace از قسمت commite استفاده میشود</td>
         </tr>
         <tr>
           <td>
             <code>git restore --staged </code>
           </td>
-          <td>برای حذف یک فایل یا فولدر از  منطقه stage استفاده میشود</td>
+          <td>برای حذف یک فایل یا فولدر از منطقه stage استفاده میشود</td>
         </tr>
         <tr>
           <td>
             <code>git restore --source #&&&&&& file/folferName</code>
           </td>
-          <td>همانند chekout تغییرات را به commite مد نظر می برد و اگر از نام فایل یا فولدری استفاده کرده باشیم صرفا تغیراتت اون فایل و فولدر رو به انجام میشود</td>
+          <td>
+            همانند chekout تغییرات را به commite مد نظر می برد و اگر از نام فایل
+            یا فولدری استفاده کرده باشیم صرفا تغیراتت اون فایل و فولدر رو به
+            انجام میشود
+          </td>
         </tr>
         <tr>
           <td>
@@ -263,9 +267,38 @@
           <td>
             <code> git clean -f -d file&Folder name</code>
           </td>
-          <td>برای حذف فایل و پوشه مورد نظرمون به صورت کامل از پروژه مورد استفاده قرار می‌گیرد </td>
+          <td>
+            برای حذف فایل و پوشه مورد نظرمون به صورت کامل از پروژه مورد استفاده
+            قرار می‌گیرد
+          </td>
         </tr>
-        
+        <tr>
+          <td>
+            <code>git reset --soft #$$$$$$</code>
+          </td>
+          <td>
+            تمامی commite من رو تا رسیدن به کامیت مورد نظر حذف می‌کند به صوری که
+            قابل بازگردانی نیست
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>git reset --mixed #$$$$$$</code>
+          </td>
+          <td>
+            تمامی commiteها و stage های من رو تا رسیدن به commite مورد نظر پاک
+            می‌شود
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code> git reset --hard #$$$$$$</code>
+          </td>
+          <td>
+            کامل محیط کاربری (work direcktore) و محیط stage به همراه commiteها
+            رو پاک کرده و کد رو به مرحله کد نویسی در کامیت مورد نظر میبره
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
