@@ -3,310 +3,190 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>مستندات دستورات Git</title>
     <link rel="stylesheet" href="../assets/styles/style.css" />
   </head>
   <body>
-    <h1>test git local seystem</h1>
+    <h1>دستورات کاربردی Git</h1>
     <table>
       <thead>
         <tr>
-          <th>دستورگیت</th>
+          <th>دستور Git</th>
           <th>کارایی دستور</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><code>git -v</code></td>
-          <td>نمایش ورژن گیتهاب نصب شده</td>
+          <td><code>git --version</code></td>
+          <td>نمایش نسخه Git نصب شده</td>
         </tr>
         <tr>
-          <td><code>git config.username</code></td>
-          <td>انتخاب نام کاربری برای کار</td>
+          <td><code>git config user.name "name"</code></td>
+          <td>تنظیم نام کاربری برای کامیت‌ها</td>
         </tr>
         <tr>
-          <td><code>git config.email</code></td>
-          <td>تنظیم ایمیل برای گیت</td>
+          <td><code>git config user.email "email@example.com"</code></td>
+          <td>تنظیم ایمیل برای کامیت‌ها</td>
         </tr>
         <tr>
           <td><code>git config --list</code></td>
-          <td>نمایش مشخصات ست شده برای گیت</td>
+          <td>نمایش تمام تنظیمات پیکربندی Git</td>
         </tr>
         <tr>
           <td><code>git init</code></td>
-          <td>معرفی پروژه به گیت</td>
+          <td>ایجاد مخزن Git جدید در پروژه جاری</td>
         </tr>
         <tr>
           <td><code>git status</code></td>
-          <td>نماش و لاگ وضعیت پروژه و گیت</td>
+          <td>نمایش وضعیت فایل‌ها (نسبت به آخرین کامیت)</td>
         </tr>
         <tr>
-          <td><code>git add "file & folder Name"</code></td>
-          <td>معرفی فایل یا فولدر مورد نظر به گیت برای رصد تغییرات</td>
+          <td><code>git add "filename"</code></td>
+          <td>اضافه کردن فایل خاص به مرحله stage برای رصد تغییرات</td>
         </tr>
         <tr>
           <td><code>git add .</code></td>
-          <td>معرفی تمامی فایل ها و فوولدر های پروژه به گیت</td>
+          <td>اضافه کردن تمام فایل‌ها و پوشه‌های پروژه به stage</td>
         </tr>
         <tr>
-          <td><code>git commit -m "Massege"</code></td>
-          <td>معرفی پروژه به عنوان بخش استیبل به گیت به همراه یاداشت</td>
+          <td><code>git commit -m "message"</code></td>
+          <td>ثبت تغییرات به همراه توضیح (پیام)</td>
         </tr>
         <tr>
-          <td><code>git commit -a -m "Massege"</code></td>
-          <td>
-            اضافه کردن فایل های مودی فای به گیت و سریع تر شدن قابلیت کامیت
-          </td>
+          <td><code>git commit -a -m "message"</code></td>
+          <td>ثبت خودکار فایل‌های track شده (بدون نیاز به add)</td>
         </tr>
         <tr>
           <td><code>git log</code></td>
-          <td>نمایش لیست تغییرات و commit های ثبت شده</td>
+          <td>نمایش لیست کامل کامیت‌ها به همراه جزئیات</td>
         </tr>
         <tr>
           <td><code>git log --oneline</code></td>
-          <td>نمایش هر لاگ در یک خط ( خلاصه و کاربردی )</td>
+          <td>نمایش خلاصه کامیت‌ها (هر کامیت در یک خط)</td>
         </tr>
         <tr>
           <td><code>git log --stat</code></td>
-          <td>
-            نمایش تغیرات دقیق لاگ ها که چه کد هایی اضافه شده و چه کد هایی از
-            commit های من حذف شده
-          </td>
+          <td>نمایش آمار تغییرات در هر کامیت (افزوده/حذف شده)</td>
         </tr>
         <tr>
           <td><code>git log --graph</code></td>
-          <td>نمایش لاگ‌ها به صورت گرافیکی</td>
+          <td>نمایش شاخه‌ها به صورت گرافیکی</td>
         </tr>
         <tr>
           <td><code>git log --graph --oneline</code></td>
-          <td>نمایش لاگ ها به صورت گرافیکی اما خلاصه</td>
+          <td>نمایش گرافیکی خلاصه کامیت‌ها</td>
         </tr>
         <tr>
-          <td><code>git log --after="23-10-12"</code></td>
-          <td>نمایش تغیرات بعد از تاریخ 2023/10/12</td>
+          <td><code>git log --after="2023-10-12"</code></td>
+          <td>نمایش کامیت‌های بعد از تاریخ مشخص (سال-ماه-روز)</td>
         </tr>
         <tr>
-          <td><code>git log --before="23-10-12"</code></td>
-          <td>نمایش تغیرات قبل از تاریخ 2023/10/12</td>
+          <td><code>git log --before="2023-10-12"</code></td>
+          <td>نمایش کامیت‌های قبل از تاریخ مشخص</td>
         </tr>
         <tr>
-          <td><code>git log --author="Mehdi rabani"</code></td>
-          <td>نمایش تغیرات و کامییت های توصعه دهنده مهدی ربانی</td>
+          <td><code>git log --author="name"</code></td>
+          <td>نمایش کامیت‌های یک نویسنده خاص</td>
         </tr>
         <tr>
-          <td><code>git commit -am "Masege"</code></td>
-          <td>
-            دقیقا همانند <code>git commit -a -m "Massege"</code> عمل می‌کنه
-          </td>
+          <td><code>git commit -am "message"</code></td>
+          <td>معادل <code>git commit -a -m "message"</code></td>
         </tr>
         <tr>
-          <td><code>git show $$$$$$$</code></td>
-          <td>
-            <abbr title="$$$$$$$$ شناسه یکتای کامیت ما هست "
-              >نمایش تغییرات در commit $$$$$$$$ مورد نظر
-            </abbr>
-          </td>
+          <td><code>git show commit-hash</code></td>
+          <td>نمایش تغییرات یک کامیت مشخص (به جای $$$$$$ هش واقعی قرار دهید)</td>
         </tr>
         <tr>
           <td><code>git config --local alias.lgo "log --oneline"</code></td>
-          <td>
-            برای مخفف سازی از دستورات استفاده می‌شود به عنوان مثال
-            <code>git log --oneline</code> به صورت <code> git lgo</code>
-            نوشته میشود
-          </td>
+          <td>ایجاد نام مستعار برای دستورات (مثال: با lgo جایگزین log --oneline)</td>
         </tr>
         <tr>
-          <td>
-            <code>git branch</code>
-          </td>
-          <td>
-            برای نمایش تعداد شاخه های موجوددر گیت استفاده می‌شود (همون ranch
-            خودمون)
-          </td>
+          <td><code>git branch</code></td>
+          <td>نمایش لیست شاخه‌های موجود</td>
         </tr>
         <tr>
-          <td>
-            <code>git branch shopingCard</code>
-          </td>
-          <td>بک برنچ یا یک شاخه به اسم shopingCard ساختیم</td>
+          <td><code>git branch branch-name</code></td>
+          <td>ایجاد شاخه جدید با نام دلخواه</td>
         </tr>
         <tr>
-          <td>
-            <code>git switch shopingCard</code>
-          </td>
-          <td>با اساتفاده از این برنچ ما وارد شاخه shopingCard می شویم</td>
+          <td><code>git switch branch-name</code></td>
+          <td>تغییر به شاخه دیگر (جابجایی HEAD)</td>
         </tr>
         <tr>
-          <td>
-            <code>git branch -d shopingCard</code>
-          </td>
-          <td>با استفاده از کد بالا ما شاخه shopingCard رو حذف کردیم</td>
+          <td><code>git branch -d branch-name</code></td>
+          <td>حذف شاخه (فقط در صورت merged بودن)</td>
         </tr>
         <tr>
-          <td>
-            <code>git switch -c likePost</code>
-          </td>
-          <td>
-            ما با استفاده از کد بالا هم یک برنچ به نام likePost ساختیم و هم وارد
-            شاخه اون برنچ شدیم
-          </td>
+          <td><code>git switch -c branch-name</code></td>
+          <td>ایجاد شاخه جدید و جابجایی به آن در یک مرحله</td>
         </tr>
         <tr>
-          <td>
-            <code>git branch -m table</code>
-          </td>
-          <td>نام شاخه ما رو به table تغییر داد</td>
+          <td><code>git branch -m new-name</code></td>
+          <td>تغییر نام شاخه فعلی</td>
         </tr>
         <tr>
-          <td>
-            <code>git merge branchName</code>
-          </td>
-          <td>
-            شاخه branchName با شاخه اصلی و شاخه والد ترکیب میشود این نوع ترکیب
-            نوع سریع هست
-          </td>
+          <td><code>git merge branch-name</code></td>
+          <td>ادغام شاخه دیگر با شاخه فعلی (Fast-forward یا merge commit)</td>
         </tr>
         <tr>
-          <td><code>____</code></td>
-          <td>در حالت Fast Forwarding نیاز به کامیت مرج نیست</td>
+          <td><code>git diff</code></td>
+          <td>نمایش تفاوت بین working directory و آخرین کامیت</td>
         </tr>
         <tr>
-          <td><code>____</code></td>
-          <td>
-            در صورتی که روی یک شاخه کار کنیم و به صورت همزمان رو شاخه دیگر هم
-            کار کنیم نوع ادغام شاخه ها به Non Fast Forwarding تغییر می‌کند
-          </td>
+          <td><code>git diff --staged</code></td>
+          <td>نمایش تفاوت بین stage و آخرین کامیت</td>
         </tr>
         <tr>
-          <td><code>____</code></td>
-          <td>
-            در حالت ادغام Non Fast Forwarding در لحظه ادغام یک merge commit نیاز
-            است
-          </td>
+          <td><code>git diff HEAD</code></td>
+          <td>نمایش تفاوت working directory با آخرین کامیت</td>
         </tr>
         <tr>
-          <td>
-            <code> git diff </code>
-          </td>
-          <td>
-            برای نمایش تغیرات و مقایسه شاخه‌های ثبت شده commit های ما با یک دیگر
-            و یا بخش کاربریما
-          </td>
+          <td><code>git checkout commit-hash</code></td>
+          <td>جابجایی HEAD به کامیت قدیمی (حالت detached HEAD)</td>
         </tr>
         <tr>
-          <td>
-            <code>git diff --stage</code>
-          </td>
-          <td>
-            برای نمایش تغییرات آخرین commit ما با نسخه موجود در stage استفاده
-            میشود
-          </td>
+          <td><code>git log --all</code></td>
+          <td>نمایش تمام کامیت‌ها در همه شاخه‌ها (حتی در حالت detached)</td>
         </tr>
         <tr>
-          <td>
-            <code>git diff head</code>
-          </td>
-          <td>نمایش آخرین تغییرات با نسخه موجود در workSpace و commite ما</td>
+          <td><code>git checkout commit-hash -- filename</code></td>
+          <td>بازگردانی یک فایل خاص به نسخه کامیت مشخص</td>
         </tr>
         <tr>
-          <td>
-            <code>git chekout #$$$$$$$ </code>
-          </td>
-          <td>
-            برای جا به جا کردن هد روی commit ها و همینطور جابه جایی بین
-            شاخه‌ها(branch) استفاده میشود
-          </td>
+          <td><code>git restore filename</code></td>
+          <td>بازگردانی تغییرات یک فایل به آخرین کامیت (لغو تغییرات نکرده)</td>
         </tr>
         <tr>
-          <td>
-            <code>git log --all </code>
-          </td>
-          <td>
-            برای نمایش تمامی log ها استفاده میشود برای زمانی که هد رو جا به جا
-            کرده باشیم استفاده میشود
-          </td>
+          <td><code>git restore --staged filename</code></td>
+          <td>خارج کردن فایل از stage (معادل <code>git reset HEAD filename</code>)</td>
+        <table>
+        <tr>
+          <td><code>git restore --source=commit-hash filename</code></td>
+          <td>بازگردانی فایل به نسخه یک کامیت خاص (مشابه checkout)</td>
         </tr>
         <tr>
-          <td>
-            <code>git chekout #$$$$$$$ File/folderName</code>
-          </td>
-          <td>
-            برای نمایش تغییرات در یک فایل خاص و یا یه قولدر خاص در یک commite
-            خاص استفاده میشود
-          </td>
+          <td><code>git restore --source=HEAD</code></td>
+          <td>بازگردانی تمام فایل‌ها به آخرین کامیت (لغو تغییرات نکرده)</td>
         </tr>
         <tr>
-          <td>
-            <code>git restore</code>
-          </td>
-          <td>برای حذف تغغیرات workSpace از قسمت commite استفاده میشود</td>
+          <td><code>git clean -fd</code></td>
+          <td>حذف فایل‌ها و پوشه‌های untracked از پروژه (با احتیاط!)</td>
         </tr>
         <tr>
-          <td>
-            <code>git restore --staged </code>
-          </td>
-          <td>برای حذف یک فایل یا فولدر از منطقه stage استفاده میشود</td>
+          <td><code>git reset --soft commit-hash</code></td>
+          <td>بازگردانی به کامیت مشخص؛ تغییرات در stage باقی می‌مانند (قابل بازگردانی با reflog)</td>
         </tr>
         <tr>
-          <td>
-            <code>git restore --source #&&&&&& file/folferName</code>
-          </td>
-          <td>
-            همانند chekout تغییرات را به commite مد نظر می برد و اگر از نام فایل
-            یا فولدری استفاده کرده باشیم صرفا تغیراتت اون فایل و فولدر رو به
-            انجام میشود
-          </td>
+          <td><code>git reset --mixed commit-hash</code></td>
+          <td>بازگردانی به کامیت مشخص؛ تغییرات در working directory باقی می‌مانند</td>
         </tr>
         <tr>
-          <td>
-            <code>git restore --source head</code>
-          </td>
-          <td>بازگردانی تغیراتت به حالت اولیه</td>
+          <td><code>git reset --hard commit-hash</code></td>
+          <td>بازگردانی کامل به کامیت مشخص (⚠️ خطرناک: تغییرات حذف می‌شوند)</td>
         </tr>
         <tr>
-          <td>
-            <code> git clean -f -d file&Folder name</code>
-          </td>
-          <td>
-            برای حذف فایل و پوشه مورد نظرمون به صورت کامل از پروژه مورد استفاده
-            قرار می‌گیرد
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>git reset --soft #$$$$$$</code>
-          </td>
-          <td>
-            تمامی commite من رو تا رسیدن به کامیت مورد نظر حذف می‌کند به صوری که
-            قابل بازگردانی نیست
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>git reset --mixed #$$$$$$</code>
-          </td>
-          <td>
-            تمامی commiteها و stage های من رو تا رسیدن به commite مورد نظر پاک
-            می‌شود
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code> git reset --hard #$$$$$$</code>
-          </td>
-          <td>
-            کامل محیط کاربری (work direcktore) و محیط stage به همراه commiteها
-            رو پاک کرده و کد رو به مرحله کد نویسی در کامیت مورد نظر میبره
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>git revert #$$$$$$</code>
-          </td>
-          <td>
-            با استفاده از کد <code>git revert</code> می‌توانید تغییرات را بدون
-            حذف اطلاعات به کامیت مورد نظر برگردانید
-          </td>
+          <td><code>git revert commit-hash</code></td>
+          <td>ایجاد کامیت جدید برای معکوس کردن تغییرات یک کامیت قبلی (ایمن‌تر از reset)</td>
         </tr>
       </tbody>
     </table>
