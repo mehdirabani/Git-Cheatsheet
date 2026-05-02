@@ -1,193 +1,202 @@
-<!doctype html>
-<html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مستندات دستورات Git</title>
-    <link rel="stylesheet" href="../assets/styles/style.css" />
-  </head>
-  <body>
-    <h1>دستورات کاربردی Git</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>دستور Git</th>
-          <th>کارایی دستور</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code>git --version</code></td>
-          <td>نمایش نسخه Git نصب شده</td>
-        </tr>
-        <tr>
-          <td><code>git config user.name "name"</code></td>
-          <td>تنظیم نام کاربری برای کامیت‌ها</td>
-        </tr>
-        <tr>
-          <td><code>git config user.email "email@example.com"</code></td>
-          <td>تنظیم ایمیل برای کامیت‌ها</td>
-        </tr>
-        <tr>
-          <td><code>git config --list</code></td>
-          <td>نمایش تمام تنظیمات پیکربندی Git</td>
-        </tr>
-        <tr>
-          <td><code>git init</code></td>
-          <td>ایجاد مخزن Git جدید در پروژه جاری</td>
-        </tr>
-        <tr>
-          <td><code>git status</code></td>
-          <td>نمایش وضعیت فایل‌ها (نسبت به آخرین کامیت)</td>
-        </tr>
-        <tr>
-          <td><code>git add "filename"</code></td>
-          <td>اضافه کردن فایل خاص به مرحله stage برای رصد تغییرات</td>
-        </tr>
-        <tr>
-          <td><code>git add .</code></td>
-          <td>اضافه کردن تمام فایل‌ها و پوشه‌های پروژه به stage</td>
-        </tr>
-        <tr>
-          <td><code>git commit -m "message"</code></td>
-          <td>ثبت تغییرات به همراه توضیح (پیام)</td>
-        </tr>
-        <tr>
-          <td><code>git commit -a -m "message"</code></td>
-          <td>ثبت خودکار فایل‌های track شده (بدون نیاز به add)</td>
-        </tr>
-        <tr>
-          <td><code>git log</code></td>
-          <td>نمایش لیست کامل کامیت‌ها به همراه جزئیات</td>
-        </tr>
-        <tr>
-          <td><code>git log --oneline</code></td>
-          <td>نمایش خلاصه کامیت‌ها (هر کامیت در یک خط)</td>
-        </tr>
-        <tr>
-          <td><code>git log --stat</code></td>
-          <td>نمایش آمار تغییرات در هر کامیت (افزوده/حذف شده)</td>
-        </tr>
-        <tr>
-          <td><code>git log --graph</code></td>
-          <td>نمایش شاخه‌ها به صورت گرافیکی</td>
-        </tr>
-        <tr>
-          <td><code>git log --graph --oneline</code></td>
-          <td>نمایش گرافیکی خلاصه کامیت‌ها</td>
-        </tr>
-        <tr>
-          <td><code>git log --after="2023-10-12"</code></td>
-          <td>نمایش کامیت‌های بعد از تاریخ مشخص (سال-ماه-روز)</td>
-        </tr>
-        <tr>
-          <td><code>git log --before="2023-10-12"</code></td>
-          <td>نمایش کامیت‌های قبل از تاریخ مشخص</td>
-        </tr>
-        <tr>
-          <td><code>git log --author="name"</code></td>
-          <td>نمایش کامیت‌های یک نویسنده خاص</td>
-        </tr>
-        <tr>
-          <td><code>git commit -am "message"</code></td>
-          <td>معادل <code>git commit -a -m "message"</code></td>
-        </tr>
-        <tr>
-          <td><code>git show commit-hash</code></td>
-          <td>نمایش تغییرات یک کامیت مشخص (به جای $$$$$$ هش واقعی قرار دهید)</td>
-        </tr>
-        <tr>
-          <td><code>git config --local alias.lgo "log --oneline"</code></td>
-          <td>ایجاد نام مستعار برای دستورات (مثال: با lgo جایگزین log --oneline)</td>
-        </tr>
-        <tr>
-          <td><code>git branch</code></td>
-          <td>نمایش لیست شاخه‌های موجود</td>
-        </tr>
-        <tr>
-          <td><code>git branch branch-name</code></td>
-          <td>ایجاد شاخه جدید با نام دلخواه</td>
-        </tr>
-        <tr>
-          <td><code>git switch branch-name</code></td>
-          <td>تغییر به شاخه دیگر (جابجایی HEAD)</td>
-        </tr>
-        <tr>
-          <td><code>git branch -d branch-name</code></td>
-          <td>حذف شاخه (فقط در صورت merged بودن)</td>
-        </tr>
-        <tr>
-          <td><code>git switch -c branch-name</code></td>
-          <td>ایجاد شاخه جدید و جابجایی به آن در یک مرحله</td>
-        </tr>
-        <tr>
-          <td><code>git branch -m new-name</code></td>
-          <td>تغییر نام شاخه فعلی</td>
-        </tr>
-        <tr>
-          <td><code>git merge branch-name</code></td>
-          <td>ادغام شاخه دیگر با شاخه فعلی (Fast-forward یا merge commit)</td>
-        </tr>
-        <tr>
-          <td><code>git diff</code></td>
-          <td>نمایش تفاوت بین working directory و آخرین کامیت</td>
-        </tr>
-        <tr>
-          <td><code>git diff --staged</code></td>
-          <td>نمایش تفاوت بین stage و آخرین کامیت</td>
-        </tr>
-        <tr>
-          <td><code>git diff HEAD</code></td>
-          <td>نمایش تفاوت working directory با آخرین کامیت</td>
-        </tr>
-        <tr>
-          <td><code>git checkout commit-hash</code></td>
-          <td>جابجایی HEAD به کامیت قدیمی (حالت detached HEAD)</td>
-        </tr>
-        <tr>
-          <td><code>git log --all</code></td>
-          <td>نمایش تمام کامیت‌ها در همه شاخه‌ها (حتی در حالت detached)</td>
-        </tr>
-        <tr>
-          <td><code>git checkout commit-hash -- filename</code></td>
-          <td>بازگردانی یک فایل خاص به نسخه کامیت مشخص</td>
-        </tr>
-        <tr>
-          <td><code>git restore filename</code></td>
-          <td>بازگردانی تغییرات یک فایل به آخرین کامیت (لغو تغییرات نکرده)</td>
-        </tr>
-        <tr>
-          <td><code>git restore --staged filename</code></td>
-          <td>خارج کردن فایل از stage (معادل <code>git reset HEAD filename</code>)</td>
-        <tr>
-          <td><code>git restore --source=commit-hash filename</code></td>
-          <td>بازگردانی فایل به نسخه یک کامیت خاص (مشابه checkout)</td>
-        </tr>
-        <tr>
-          <td><code>git restore --source=HEAD</code></td>
-          <td>بازگردانی تمام فایل‌ها به آخرین کامیت (لغو تغییرات نکرده)</td>
-        </tr>
-        <tr>
-          <td><code>git clean -fd</code></td>
-          <td>حذف فایل‌ها و پوشه‌های untracked از پروژه (با احتیاط!)</td>
-        </tr>
-        <tr>
-          <td><code>git reset --soft commit-hash</code></td>
-          <td>بازگردانی به کامیت مشخص؛ تغییرات در stage باقی می‌مانند (قابل بازگردانی با reflog)</td>
-        </tr>
-        <tr>
-          <td><code>git reset --mixed commit-hash</code></td>
-          <td>بازگردانی به کامیت مشخص؛ تغییرات در working directory باقی می‌مانند</td>
-        </tr>
-        <tr>
-          <td><code>git reset --hard commit-hash</code></td>
-          <td>بازگردانی کامل به کامیت مشخص (⚠️ خطرناک: تغییرات حذف می‌شوند)</td>
-        </tr>
-        <tr>
-          <td><code>git revert commit-hash</code></td>
-          <td>ایجاد کامیت جدید برای معکوس کردن تغییرات یک کامیت قبلی (ایمن‌تر از reset)</td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>مستندات دستورات Git | مرجع سریع</title>
+  <meta name="description" content="جدول مرجع دستورات کاربردی Git به همراه توضیحات فارسی">
+  <!-- CSS Reset و استایل اصلی -->
+<link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+  <main>
+    <h1>
+      <span>📘</span> دستورات کاربردی Git
+    </h1>
+    <div class="table-container">
+      <table class="git-table">
+        <thead>
+          <tr>
+            <th scope="col">دستور Git</th>
+            <th scope="col">کارایی دستور</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>git --version</code></td>
+            <td>نمایش نسخه Git نصب شده</td>
+          </tr>
+          <tr>
+            <td><code>git config user.name "name"</code></td>
+            <td>تنظیم نام کاربری برای کامیت‌ها</td>
+          </tr>
+          <tr>
+            <td><code>git config user.email "email@example.com"</code></td>
+            <td>تنظیم ایمیل برای کامیت‌ها</td>
+          </tr>
+          <tr>
+            <td><code>git config --list</code></td>
+            <td>نمایش تمام تنظیمات پیکربندی Git</td>
+          </tr>
+          <tr>
+            <td><code>git init</code></td>
+            <td>ایجاد مخزن Git جدید در پروژه جاری</td>
+          </tr>
+          <tr>
+            <td><code>git status</code></td>
+            <td>نمایش وضعیت فایل‌ها (نسبت به آخرین کامیت)</td>
+          </tr>
+          <tr>
+            <td><code>git add "filename"</code></td>
+            <td>اضافه کردن فایل خاص به مرحله stage برای رصد تغییرات</td>
+          </tr>
+          <tr>
+            <td><code>git add .</code></td>
+            <td>اضافه کردن تمام فایل‌ها و پوشه‌های پروژه به stage</td>
+          </tr>
+          <tr>
+            <td><code>git commit -m "message"</code></td>
+            <td>ثبت تغییرات به همراه توضیح (پیام)</td>
+          </tr>
+          <tr>
+            <td><code>git commit -a -m "message"</code></td>
+            <td>ثبت خودکار فایل‌های track شده (بدون نیاز به add)</td>
+          </tr>
+          <tr>
+            <td><code>git log</code></td>
+            <td>نمایش لیست کامل کامیت‌ها به همراه جزئیات</td>
+          </tr>
+          <tr>
+            <td><code>git log --oneline</code></td>
+            <td>نمایش خلاصه کامیت‌ها (هر کامیت در یک خط)</td>
+          </tr>
+          <tr>
+            <td><code>git log --stat</code></td>
+            <td>نمایش آمار تغییرات در هر کامیت (افزوده/حذف شده)</td>
+          </tr>
+          <tr>
+            <td><code>git log --graph</code></td>
+            <td>نمایش شاخه‌ها به صورت گرافیکی</td>
+          </tr>
+          <tr>
+            <td><code>git log --graph --oneline</code></td>
+            <td>نمایش گرافیکی خلاصه کامیت‌ها</td>
+          </tr>
+          <tr>
+            <td><code>git log --after="2023-10-12"</code></td>
+            <td>نمایش کامیت‌های بعد از تاریخ مشخص (سال-ماه-روز)</td>
+          </tr>
+          <tr>
+            <td><code>git log --before="2023-10-12"</code></td>
+            <td>نمایش کامیت‌های قبل از تاریخ مشخص</td>
+          </tr>
+          <tr>
+            <td><code>git log --author="name"</code></td>
+            <td>نمایش کامیت‌های یک نویسنده خاص</td>
+          </tr>
+          <tr>
+            <td><code>git commit -am "message"</code></td>
+            <td>معادل <code>git commit -a -m "message"</code></td>
+          </tr>
+          <tr>
+            <td><code>git show commit-hash</code></td>
+            <td>نمایش تغییرات یک کامیت مشخص (به جای commit-hash هش واقعی قرار دهید)</td>
+          </tr>
+          <tr>
+            <td><code>git config --local alias.lgo "log --oneline"</code></td>
+            <td>ایجاد نام مستعار برای دستورات (مثال: با lgo جایگزین log --oneline)</td>
+          </tr>
+          <tr>
+            <td><code>git branch</code></td>
+            <td>نمایش لیست شاخه‌های موجود</td>
+          </tr>
+          <tr>
+            <td><code>git branch branch-name</code></td>
+            <td>ایجاد شاخه جدید با نام دلخواه</td>
+          </tr>
+          <tr>
+            <td><code>git switch branch-name</code></td>
+            <td>تغییر به شاخه دیگر (جابجایی HEAD)</td>
+          </tr>
+          <tr>
+            <td><code>git branch -d branch-name</code></td>
+            <td>حذف شاخه (فقط در صورت merged بودن)</td>
+          </tr>
+          <tr>
+            <td><code>git switch -c branch-name</code></td>
+            <td>ایجاد شاخه جدید و جابجایی به آن در یک مرحله</td>
+          </tr>
+          <tr>
+            <td><code>git branch -m new-name</code></td>
+            <td>تغییر نام شاخه فعلی</td>
+          </tr>
+          <tr>
+            <td><code>git merge branch-name</code></td>
+            <td>ادغام شاخه دیگر با شاخه فعلی (Fast-forward یا merge commit)</td>
+          </tr>
+          <tr>
+            <td><code>git diff</code></td>
+            <td>نمایش تفاوت بین working directory و آخرین کامیت</td>
+          </tr>
+          <tr>
+            <td><code>git diff --staged</code></td>
+            <td>نمایش تفاوت بین stage و آخرین کامیت</td>
+          </tr>
+          <tr>
+            <td><code>git diff HEAD</code></td>
+            <td>نمایش تفاوت working directory با آخرین کامیت</td>
+          </tr>
+          <tr>
+            <td><code>git checkout commit-hash</code></td>
+            <td>جابجایی HEAD به کامیت قدیمی (حالت detached HEAD)</td>
+          </tr>
+          <tr>
+            <td><code>git log --all</code></td>
+            <td>نمایش تمام کامیت‌ها در همه شاخه‌ها (حتی در حالت detached)</td>
+          </tr>
+          <tr>
+            <td><code>git checkout commit-hash -- filename</code></td>
+            <td>بازگردانی یک فایل خاص به نسخه کامیت مشخص</td>
+          </tr>
+          <tr>
+            <td><code>git restore filename</code></td>
+            <td>بازگردانی تغییرات یک فایل به آخرین کامیت (لغو تغییرات نکرده)</td>
+          </tr>
+          <tr>
+            <td><code>git restore --staged filename</code></td>
+            <td>خارج کردن فایل از stage (معادل <code>git reset HEAD filename</code>)</td>
+          </tr>
+          <tr>
+            <td><code>git restore --source=commit-hash filename</code></td>
+            <td>بازگردانی فایل به نسخه یک کامیت خاص (مشابه checkout)</td>
+          </tr>
+          <tr>
+            <td><code>git restore --source=HEAD</code></td>
+            <td>بازگردانی تمام فایل‌ها به آخرین کامیت (لغو تغییرات نکرده)</td>
+          </tr>
+          <tr>
+            <td><code>git clean -fd</code></td>
+            <td>حذف فایل‌ها و پوشه‌های untracked از پروژه (با احتیاط!)</td>
+          </tr>
+          <tr>
+            <td><code>git reset --soft commit-hash</code></td>
+            <td>بازگردانی به کامیت مشخص؛ تغییرات در stage باقی می‌مانند (قابل بازگردانی با reflog)</td>
+          </tr>
+          <tr>
+            <td><code>git reset --mixed commit-hash</code></td>
+            <td>بازگردانی به کامیت مشخص؛ تغییرات در working directory باقی می‌مانند</td>
+          </tr>
+          <tr>
+            <td><code>git reset --hard commit-hash</code></td>
+            <td>بازگردانی کامل به کامیت مشخص (⚠️ خطرناک: تغییرات حذف می‌شوند)</td>
+          </tr>
+          <tr>
+            <td><code>git revert commit-hash</code></td>
+            <td>ایجاد کامیت جدید برای معکوس کردن تغییرات یک کامیت قبلی (ایمن‌تر از reset)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
 </html>

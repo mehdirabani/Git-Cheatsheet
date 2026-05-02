@@ -1,4 +1,4 @@
-/* مدرن CSS Reset */
+/* modern-css-reset.css - فقط نرمال‌سازی اولیه بدون استایل ظاهری */
 *,
 *::before,
 *::after {
@@ -8,117 +8,41 @@
 }
 
 /* حذف استایل‌های پیش‌فرض لیست‌ها */
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
 
-/* حذف استایل‌های پیش‌فرض لینک‌ها */
-a {
-  text-decoration: none;
-  color: inherit;
+/* تنظیم رفتار اسکرول روان (بهتر است در سطح ریشه باشد) */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%; /* جلوگیری از تغییر خودکار فونت در موبایل */
 }
 
-/* تنظیمات پایه برای بدنه */
+/* تنظیمات پایه بدنه برای رندر بهتر فونت و accessibility */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-/* تنظیمات برای مدیا المنت‌ها */
-img,
-picture,
-video,
-canvas,
-svg {
+/* حذف حاشیه و padding پیش‌فرض از المان‌های بلوکی */
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* بهبود نمایش مدیا */
+img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
 
-/* حذف استایل‌های پیش‌فرض فرم المنت‌ها */
-input,
-button,
-textarea,
-select {
+/* یکنواخت کردن فونت‌های فرم‌ها */
+input, button, textarea, select {
   font: inherit;
-  border: none;
-  outline: none;
-  background: none;
 }
 
-/* استایل بهتر برای دکمه‌ها */
-button {
-  cursor: pointer;
-}
-
-/* تنظیمات جدول‌ها */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* تنظیمات پیش‌فرض برای متن */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/* حذف استایل پیش‌فرض کراس‌ها در مرورگرها */
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button,
-input::-webkit-search-results-button,
-input::-webkit-search-results-decoration {
-  display: none;
-}
-
-/* تنظیمات برای اسکرول نرم */
-html {
-  scroll-behavior: smooth;
-}
-
-/* تنظیمات برای فونتها */
+/* جلوگیری از overflow افقی ناخواسته */
 body {
-  font-family:
-    yekan bakh,
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    sans-serif;
-}
-
-/* حذف اسپینر در اینپوت‌های عددی */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* رفع مشکلات در مرورگرهای قدیمی */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/* تنظیمات برای IE */
-html {
-  -ms-overflow-style: scrollbar;
+  overflow-x: hidden;
 }
