@@ -145,7 +145,6 @@ h1::after {
   direction: ltr;
   text-align: left;
   font-weight: 500;
-  color: #0f172a;
   background-color: var(--code-bg);
   width: 38%;
 }
