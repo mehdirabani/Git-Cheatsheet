@@ -2,8 +2,8 @@
 
 # 📘 راهنمای مصور دستورات Git | مرجع سریع و حرفه‌ای
 
-[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/git-commands-reference?style=social)](https://github.com/YOUR_USERNAME/git-commands-reference/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/git-commands-reference?style=social)](https://github.com/YOUR_USERNAME/git-commands-reference/network)
+[![GitHub stars](https://img.shields.io/github/stars/mehdirabani/git-commands-reference?style=social)](https://github.com/mehdirabani/git-commands-reference/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/mehdirabani/git-commands-reference?style=social)](https://github.com/mehdirabani/git-commands-reference/network)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -27,14 +27,14 @@
 
 ## 🎯 امکانات کلیدی
 
-| ویژگی | توضیح |
-|-------|-------|
-| 📊 **بیش از ۴۰ دستور** | پوشش کامل دستورات پایه تا پیشرفته Git |
-| 🎨 **طراحی مدرن** | گرادیانت، شفافیت (blur)، انیمیشن و سایه‌های حرفه‌ای |
-| 📱 **کاملاً واکنش‌گرا** | نمایش عالی در موبایل، تبلت و دسکتاپ |
-| 🧩 **دسترسی‌پذیری** | پشتیبانی از فوکوس، تگ‌های معنایی و کنتراست بالا |
-| 🚀 **عملکرد بهینه** | استفاده از CSS Variables و تکنیک‌های مدرن بدون جاوااسکریپت |
-| 🖋️ **فونت اختصاصی** | پشتیبانی از فونت «یکان باخ» برای خوانایی بهتر فارسی |
+| ویژگی                   | توضیح                                                      |
+| ----------------------- | ---------------------------------------------------------- |
+| 📊 **بیش از ۴۰ دستور**  | پوشش کامل دستورات پایه تا پیشرفته Git                      |
+| 🎨 **طراحی مدرن**       | گرادیانت، شفافیت (blur)، انیمیشن و سایه‌های حرفه‌ای        |
+| 📱 **کاملاً واکنش‌گرا** | نمایش عالی در موبایل، تبلت و دسکتاپ                        |
+| 🧩 **دسترسی‌پذیری**     | پشتیبانی از فوکوس، تگ‌های معنایی و کنتراست بالا            |
+| 🚀 **عملکرد بهینه**     | استفاده از CSS Variables و تکنیک‌های مدرن بدون جاوااسکریپت |
+| 🖋️ **فونت اختصاصی**     | پشتیبانی از فونت «یکان باخ» برای خوانایی بهتر فارسی        |
 
 ---
 
@@ -72,7 +72,7 @@
 1. فایل `pages/index.html` را باز کنید.
 2. در بخش `<tbody>` جدول، یک سطر جدید به شکل زیر اضافه کنید:
 
-```html
+````html
 <tr>
   <td><code>git your-command</code></td>
   <td>توضیح فارسی دستور شما</td>
@@ -141,3 +141,4 @@ git push origin feature/my-awesome-change
 ❌ عدم مسئولیت در قبال خسارات احتمالی
 
 <div align="center"> <sub>ساخته شده با ❤️ و ☕ در ایران</sub><br> <sub>🌟 اگر این مستندات برای شما مفید بود، به دیگران هم معرفی کنید 🌟</sub> </div></div> ```
+````
