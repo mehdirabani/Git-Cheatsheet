@@ -2,8 +2,8 @@
 
 # 📘 راهنمای مصور دستورات Git | مرجع سریع و حرفه‌ای
 
-[![GitHub stars](https://img.shields.io/github/stars/mehdirabani/git-commands-reference?style=social)](https://github.com/mehdirabani/git-commands-reference/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/mehdirabani/git-commands-reference?style=social)](https://github.com/mehdirabani/git-commands-reference/network)
+[![GitHub stars](https://img.shields.io/github/stars/mehdirabani/Git-Cheatsheet?style=social)](https://github.com/mehdirabani/Git-Cheatsheet/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/mehdirabani/Git-Cheatsheet?style=social)](https://github.com/mehdirabani/Git-Cheatsheet/network)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
