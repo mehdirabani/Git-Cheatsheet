@@ -19,8 +19,7 @@
   font-style: normal;
   font-weight: normal;
   src:
-    url("../fonts/woff/YekanBakh-Regular.woff"),
-    format("woff"),
+    url("../fonts/woff/YekanBakh-Regular.woff") format("woff"),
     url("../fonts/woff2/YekanBakh-Regular.woff2") format("woff2");
 }
 @font-face {
