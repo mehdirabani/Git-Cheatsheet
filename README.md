@@ -77,7 +77,7 @@
   <td><code>git your-command</code></td>
   <td>توضیح فارسی دستور شما</td>
 </tr>
-
+````
 project/
 ├── pages/
 │   └── index.html          # صفحه اصلی جدول دستورات
@@ -121,13 +121,12 @@ git push origin feature/my-awesome-change
 📌 تمام Pull Requestها باید به شاخه main ارسال شوند. حتماً پیشنهاد خود را به صورت واضح توضیح دهید.
 
 📞 ارتباط با توسعه‌دهنده
-سازنده: [نام شما]
+سازنده: مهدی ربانی
 
-ایمیل: your.email@example.com
+ایمیل: pgm.mehdirabani@gmail.com
 
-گیت‌هاب: @YOUR_USERNAME
+گیت‌هاب: @mehdirabani
 
-لینکدین (اختیاری): نام در لینکدین
 
 اگر از این پروژه خوشتان آمده، حتماً ⭐️ ستاره دادن یادتون نره! 😊
 
@@ -140,5 +139,4 @@ git push origin feature/my-awesome-change
 
 ❌ عدم مسئولیت در قبال خسارات احتمالی
 
-<div align="center"> <sub>ساخته شده با ❤️ و ☕ در ایران</sub><br> <sub>🌟 اگر این مستندات برای شما مفید بود، به دیگران هم معرفی کنید 🌟</sub> </div></div> ```
-````
+<div align="center"> <sub>ساخته شده با ❤️ و ☕ در ایران</sub><br> <sub>🌟 اگر این مستندات برای شما مفید بود، به دیگران هم معرفی کنید 🌟</sub> </div></div> 
